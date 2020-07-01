@@ -1,19 +1,16 @@
 settings:
   application:
+    domain: localhost:8000
     host: 0.0.0.0
+    ishttps: false
     mode: dev
     name: testApp
     port: "8000"
     readtimeout: 1
     writertimeout: 2
-    domain: localhost:8000
-    ishttps: false
-  ssl:
-    key: keystring
-    pem: temp/pem.pem
   database:
     dbtype: mysql
-    host: 192.168.10.99
+    host: 127.0.0.1
     name: goadmindb
     password: Itzler.666
     port: 3306
@@ -23,3 +20,6 @@ settings:
     timeout: 3600
   log:
     dir: temp/logs
+  ssl:
+    key: keystring
+    pem: temp/pem.pem
